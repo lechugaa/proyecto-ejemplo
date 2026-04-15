@@ -14,22 +14,22 @@ CREATE SCHEMA cleaning;
 -- Creando copia de la tabla original excluyendo la columna `location`
 DROP TABLE IF EXISTS cleaning.food_inspections;
 CREATE TABLE cleaning.food_inspections (
-    inspection_id bigint,
-    dba_name text,
-    aka_name text,
-    license_number bigint,
-    facility_type text,
-    risk text,
-    address text,
-    city text,
-    state text,
-    zip text,
-    inspection_date timestamp,
-    inspection_type text,
-    results text,
-    violations text,
-    latitude double precision,
-    longitude double precision
+    inspection_id BIGINT,
+    dba_name TEXT,
+    aka_name TEXT,
+    license_number BIGINT,
+    facility_type TEXT,
+    risk TEXT,
+    address TEXT,
+    city TEXT,
+    state TEXT,
+    zip TEXT,
+    inspection_date TIMESTAMP,
+    inspection_type TEXT,
+    results TEXT,
+    violations TEXT,
+    latitude DOUBLE PRECISION,
+    longitude DOUBLE PRECISION
 );
 
 INSERT INTO cleaning.food_inspections
