@@ -31,8 +31,8 @@ WHERE city IS NOT NULL;
 */
 CREATE TABLE normalization.violation (
     id BIGSERIAL PRIMARY KEY,
-    code SMALLINT NOT NULL,
-    description VARCHAR(200) NOT NULL
+    code SMALLINT NOT NULL UNIQUE,
+    description VARCHAR(200) NOT NULL UNIQUE
 );
 
 INSERT INTO normalization.violation (code, description)

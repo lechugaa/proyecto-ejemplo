@@ -79,7 +79,7 @@ Finalmente, para cargar los datos en bruto se debe ejecutar el siguiente comando
 
 ## Limpieza de datos
 
-El proceso de limpieza sigue una metodología de refresh destructiuvo, por lo que cada vez que se corra se generará desde
+El proceso de limpieza sigue una metodología de refresh destructivo, por lo que cada vez que se corra se generará desde
 cero el esquema y las tablas correspondientes. Para ejecutar el proceso de limpieza de datos se debe ejecutar el siguiente 
 comando en `psql`:
 
@@ -88,8 +88,16 @@ comando en `psql`:
 ```
 
 > Aquí es una buena sección para documentar las actividades realizadas
-> de acuerdo a lo mencionado en el inciso C: Limpieza de datos 
+> de acuerdo a lo mencionado en el inciso C: Limpieza de datos
 
+## Normalización
 
+La normalización se realiza también mediante la estrategia de refresh destructivo. Para ejecutar el proceso de
+normalización se puede emplear el siguiente comando en `psql`:
 
-    
+```{psql}
+\i pipeline_scripts/03_data_normalization.sql
+```
+
+>  Aquí es una buena sección para documentar la documentación intuitiva de las tablas.
+> También un ERD del diseño final debe ser incluido.
