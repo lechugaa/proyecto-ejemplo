@@ -19,9 +19,6 @@ de Chicago sobre inspecciones a restaurantes. Se puede acceder a los datos en
 Las instrucciones de replicación del proyecto asumen que los datos se encuentran almacenados en formato
 `CSV` bajo el nombre `./data/raw_data.csv`.
 
-> Esta es una buena sección para el el inciso A.
-> Introducción al conjunto de datos y al problema a estudiar considerando aspectos éticos del conjunto de datos empleado.
-
 ## Documentación
 
 ### Estructura del repositorio
@@ -99,5 +96,5 @@ normalización se puede emplear el siguiente comando en `psql`:
 \i pipeline_scripts/03_data_normalization.sql
 ```
 
->  Aquí es una buena sección para documentar la documentación intuitiva de las tablas.
+>  Aquí es una buena sección para documentar la descomposición intuitiva de las tablas.
 > También un ERD del diseño final debe ser incluido.
